@@ -1,0 +1,7 @@
+const { default: userEvent } = require('@testing-library/user-event');
+const express= require('express');
+const router=express.Router();
+router.get('/', (req,res)=>{
+   res.json(obj)
+})
+module.exports=router

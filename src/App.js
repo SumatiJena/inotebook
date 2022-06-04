@@ -1,4 +1,3 @@
-
 import './App.css';
 import About from './component/About';
 import Home from './component/Home';
@@ -11,17 +10,22 @@ import {
 import NoteState from './component/context/NoteState';
 
 function App() {
+  
   return (
     <>
     <NoteState>
-    <BrowserRouter>
-    <Navbar/>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      </Routes>
-    </BrowserRouter>
-    </NoteState>
+      <BrowserRouter>
+      <Navbar/>
+      <div className='container'>
+        <Routes>
+            <Route path="/home" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+          
+        </Routes>
+        </div>
+        </BrowserRouter>
+        </NoteState>
+     
     </>
   );
 }

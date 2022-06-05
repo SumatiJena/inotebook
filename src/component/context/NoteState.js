@@ -35,8 +35,9 @@ const addNotes=(title,desc,tag)=>{
 }
 
 //delete Notes
-const deleteNotes=()=>{
-  
+const deleteNotes=(id)=>{
+  const newnotes=notes.filter((note)=>{return note.id!==id})
+  setNotes(newnotes)
 }
 
 //edit Notes

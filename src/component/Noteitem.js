@@ -1,5 +1,5 @@
 
-import React, { useContext } from "react";
+import React from "react";
 import NoteContext from "./context/Notecontext";
 
 const Noteitem = (props) => {
@@ -10,9 +10,13 @@ const Noteitem = (props) => {
         <div  className="card">
         <img src="..."  className="card-img-top" alt="..."/>
         <div  className="card-body">
-            <h5  className="card-title">{note.title}</h5>
+            <div className="d-flex align-items-center">
+                <h5  className="card-title mx-2">{note.title}</h5>
+                <i class="fa-regular fa-trash-can mx-2"></i>
+                <i class="fa-regular fa-pen-to-square mx-2"></i>
+            </div>
             <p  className="card-text">{note.description}</p>
-            <a href="#"  className="btn btn-primary">Go somewhere</a>
+            
         </div>
         </div>
     </div>

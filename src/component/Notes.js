@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 
 const Notes = () => {
  const context=useContext(NoteContext)
-  const {notes,setNotes}=context
+  const {notes,setNotes}=context;
   return (
     <div>
        <div className="row my-2">
